@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Coop Space Invaders</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-uNLhQ5aKbI+tWs87tJ57x2iYqQ1zFY8g8EEqK3r+Y+4/X+5+tZ1lZ5s0h" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            max-width: 80%;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 5px;
+        }
+
+        li {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover {
+            background-color: #0056b3;
+        }
+
+        .space-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .my-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: #ccc;
+            text-align: left;
+        }
+
+        .my-info a {
+            color: #ccc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img class="space-bg" src="img/space-background.jpg" alt="Space Background">
+    <div class="container">
+        <h1>Online Multiplayer Coop Space Invaders</h1>
+        <p>Join forces with your friends to defend the galaxy from alien invaders!</p>
+        <p>Work together to strategize and defeat waves of increasingly difficult enemies.</p>
+        <p>Experience the thrill of cooperative gameplay and emerge victorious!</p>
+        <a href="/play" class="play-button">Play Now!</a>
+    </div>
+
+    <div class="my-info">
+        <ul>
+            <li>Made by Rodney Keilson - 221110593</li>
+            <li>Single player game source: <a href="https://github.com/chriscourses/space-invaders" target="_blank">GitHub Repository</a></li>
+            <li>Server and live multiplayer logic developed by Rodney Keilson</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-DfXdz2ZEUkfogvmGQU1z5LhI/bZ/pFvSZgPvQR9hbm2LqH2l3r+kKjiOgqD2Lq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/re+2r+bIKJ7Yo+C2duQpmq9T72s7jYb1t4BSp/i9MOjq+r0q2b5+5AcG8IQjb" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-QQW8Poj2r5jKGCfpC0nF9+5Z1i0k+QAxE5l0dZ+Vc7/jGdGd+e4jQUhDPyDGwo" crossorigin="anonymous"></script>
+</body>
+</html>
